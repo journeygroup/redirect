@@ -1,0 +1,3 @@
+server="abwe"
+commands[]="cd /var/www/vhosts/default"
+commands[]="git pull origin master"

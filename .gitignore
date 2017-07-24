@@ -1,0 +1,6 @@
+/vendor
+/build
+/node_modules
+.DS_Store
+/config/database.php
+/config/auth.php
