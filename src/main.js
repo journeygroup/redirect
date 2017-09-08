@@ -1,8 +1,17 @@
+/**
+ * File: main.js
+ *
+ * Simple ES6 file (compiled with webpack) that defines the admin interactions.
+ */
 import '../styles/main.scss'
 import Sortable from 'sortablejs'
 import axios from 'axios'
 import qs from 'qs'
 
+
+/**
+ * Dom element definitions.
+ */
 let items         = document.querySelector('.redirects')
 let testarea      = document.getElementById('test-area')
 let testbutton    = document.getElementById('test-button')
@@ -23,6 +32,9 @@ if (items) {
   });
 }
 
+/**
+ * Watch for clicks on the tabs, and toggle the active tab
+ */
 tabs.addEventListener('click', function (e) {
   let target = e.target.getAttribute('data-target')
   let el = document.getElementById(target)
@@ -37,6 +49,7 @@ tabs.addEventListener('click', function (e) {
   }
   el.classList.add('target-selected')
 })
+
 
 if (testbutton) {
   testbutton.addEventListener('click', function (e) {
