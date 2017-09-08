@@ -11,7 +11,7 @@ To install just clone the repository and run the migrations/seeds.
 
 ```sh
 cd /var/www/vhosts
-git clone git@bitbucket.org:journeygroup/redirect.git
+git clone git@github.com:journeygroup/redirect.git
 cd redirect
 ```
 
