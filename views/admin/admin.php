@@ -49,7 +49,7 @@
       <div class="test-form" id="test-form">
         <div class="form-element test-url">
           <label>Log Query</label>
-          <?php $q = "SELECT COUNT(id) as `total`, `host` FROM logs WHERE DATE > '" . date('m/d/Y', strtotime('-1 month')) . "' GROUP BY `host`" ?>
+          <?php $q = "SELECT COUNT(id) as `total`, `host` FROM logs WHERE DATE > '" . date('Y-m-d', strtotime('-1 month')) . "' GROUP BY `host` ORDER BY COUNT(id) DESC"; ?>
           <textarea type="text" placeholder="<?= $q ?>" id="query-field"><?= $q ?></textarea>
         </div>
         <div class="form-element">
